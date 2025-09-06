@@ -311,4 +311,23 @@ border-radius: 60px;
        right: 50%;
        transform: translateX(50%) */
     }
+
+}
+.back-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #6cbd44;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  z-index: 1000; /* biar selalu di depan */
+}
+
+.back-btn:hover {
+  background: #57a936;
 }
