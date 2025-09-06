@@ -134,6 +134,17 @@ header {
 .slider {
     height:220px;
 }
+	.book ul {
+    display: flex !important;   /* pastikan tetap horizontal */
+    flex-wrap: nowrap;          /* jangan pindah ke bawah */
+    gap: 5px !important;        /* jarak lebih kecil */
+  }
+
+  .book a {
+    font-size: 12px !important;  /* kecilkan teks */
+    padding: 8px 10px !important; /* kecilkan tombol */
+    white-space: nowrap;         /* cegah teks pecah ke bawah */
+  }
 	
 }
 /**********END SLIDER SECTION**********/
@@ -287,4 +298,5 @@ footer li {
 .contactus li{
 	width:90%;
 }
+
 /**********END FOOTER SECTION**********/
