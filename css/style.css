@@ -1,0 +1,290 @@
+* {
+	font-family:Roboto, sans-serif, arial;
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+a {
+	text-decoration:none;
+}
+
+
+:target {
+	display:block!important;
+}
+.container {
+	 width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+
+}
+
+/**********START HEADER SECTION**********/
+header {
+	display: flex;
+	position: relative;
+	background:#7c4300;
+}
+.header {
+	margin:5px 0px;
+	display:flex;
+}
+.logo {
+	max-width:30%;
+	min-width:150px;
+}
+.menu {
+	margin:0px auto;
+	text-align:center;
+}
+.menu ul {
+	display: flex;
+	list-style: none;
+	gap: 20px;
+	margin:12px 0px 0px 0px;
+}
+.menu li {
+	color:brown;
+	font-weight:600;
+}
+.book ul {
+	display: flex;
+	list-style: none;
+	gap: 20px;
+	margin-top:10px;
+}
+.book a {
+	font-size: 14px;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 5px;
+	color: #fff;
+	background:#6cbd44;
+}
+.menuicon {
+	display:none;
+}
+.closeicon {
+	display:none;
+	float:right;
+	font-size: 28px;
+	color: black;
+}
+
+/*For Mobile And Ipad Version*/
+
+@media screen and (max-width: 768px) {
+
+.menuicon, .closeicon {
+ display:unset;
+}
+#menu {
+	 position: fixed;
+	 left: 0px;
+	 background: #00000094;
+	 width: 100%;
+	 height: 100%;
+	 top: 0px;
+	 text-align: left;
+	 display: none;
+}
+.menu-inner {
+	 background: #fff5ce;
+	 height: 100%;
+	 top: 0px;
+	 left: 0px;
+	 width: 70%;
+	 position: absolute;
+	 padding: 20px;
+	 border-right: 2px solid red;
+}
+#menu ul {
+	 display: block;
+	 margin-top: 45px;
+}
+#menu ul li {
+	 margin-bottom:30px;
+}
+
+}
+/**********END HEADER SECTION**********/
+
+/**********START SLIDER SECTION**********/
+.w-100 {
+	width:100%;
+}
+.slider {
+    object-fit: cover;
+    width: 100%;
+    height:700px;
+}
+
+@media screen and (max-width: 768px) {
+
+.slider {
+    height:400px;
+}	
+
+}
+
+@media screen and (max-width: 480px) {
+
+.slider {
+    height:220px;
+}
+	
+}
+/**********END SLIDER SECTION**********/
+
+/**********START BANNER SECTION**********/
+.banner {
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	display: grid;
+	gap: 10px;
+	margin:30px 0px;
+}
+/**********END BANNER SECTION**********/
+
+/**********START PRODUCT SECTION**********/
+.heading {
+    text-align: center;
+    font-size:32px;
+    padding: 0px;
+    margin: 80px 0px 0px 0px;
+}
+.heading span {
+    color: #6cbd44;
+}
+.subhead {
+    text-align: center;
+    font-size: 18px;
+    padding: 0px;
+    margin: 5px 0px 40px 0px;
+}
+.products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* selalu 4 kolom */
+	gap: 15px;
+	margin: 0 0 10px 0;
+}
+.pro {
+    border: 1px solid #6cbd44;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 5px 15px 5px;
+	text-align: center;
+}
+.pro h6 {
+     font-size: clamp(12px, 2vw, 18px);
+    margin: 20px 0px 5px 0px;
+}
+.pro b {
+     font-size: clamp(14px, 2.5vw, 22px); /* min 14px, max 22px */
+    margin-right: 5px;
+    color: red;
+}
+.pro strike {
+    font-size: clamp(4px, 1.8vw, 14px); /* min 10px, max 14px */
+}
+.pro a {
+    text-align: center;
+    background: rgb(123, 255, 0);
+    color: white;
+    padding: 10px 12px;
+    border-radius: 25px;
+    font-size: 16px;
+	width:200px;
+	margin:0px auto;
+    margin-top: 20px;
+}
+/**********END PRODUCT SECTION**********/
+
+/*************IKLAN***************/
+.ads-section {
+    background: #fffbf4; 
+	padding:20px 0px;
+}
+.ads {
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	display: grid;
+	gap: 50px;
+	margin:20px 0px;
+}
+.ads div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.ads i {
+    padding-top: 50px;
+    color: rgb(123, 255, 0);
+}
+.ads h2 {
+  font-size:60px;
+}
+.ads span {
+     color: rgb(123, 255, 0);
+}
+.ads h3 {
+    font-size:24px;
+    padding: 10px 0px 10px 0px;
+	font-weight:500
+}
+.ads p {
+    font-size: 18px;
+	padding-top:5px;
+}
+.ads a{
+    margin-top: 20px;
+    background: rgb(123, 255, 0);
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    max-width: fit-content;
+}
+/**********BATAS IKLAN**********/
+
+/**********START FOOTER SECTION**********/
+footer {
+    border-top: 3px solid rgb(123, 255, 0);
+    background: rgb(208, 244, 175);
+    padding: 40px 0px;
+}
+.foot {
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	display: grid;
+	gap: 10px;
+	padding:30px 0px 50px 0px;
+	margin:0px auto;
+}
+footer h2 {
+	font-size:20px;
+	margin-bottom:25px;
+}
+footer p{
+	text-align:justify;
+	padding-right:60px;
+	line-height:28px;
+}
+footer ul{
+	padding-left:10px;
+}
+footer table td{
+	padding:10px 0px; 
+}
+footer li {
+	margin-bottom:15px;
+	line-height:26px;
+	list-style-type: disclosure-closed;
+	width:46%;
+	float:left;
+	margin-left:2%;
+}
+.contactus li{
+	width:90%;
+}
+/**********END FOOTER SECTION**********/
